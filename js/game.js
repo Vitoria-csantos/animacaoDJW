@@ -5,6 +5,11 @@ let fundo2 = new BG (500, 0, 500, 900, 'img/ceu.jpg')
 let passaro = new PASSARO ('img/pasroxo.png')
 
 
+document.addEventListener ('click', function (e)) {
+       passaro.velocidade -= 18
+}
+
+
 function draw(){
     fundo.draw()
     fundo2.draw()
